@@ -19,6 +19,30 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
+        <RelativeLayout
+            android:id="@+id/bar_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatImageButton
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:id="@+id/bar_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_input_add"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/bar_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@id/bar_button"
+                android:layout_toLeftOf="@id/bar_button"
+                android:maxLines="1"
+                android:inputType="textAutoComplete"/>
+        </RelativeLayout>
+
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main"/>

@@ -1,9 +1,37 @@
-<fragment android:id="@+id/fragment"
-          android:name="com.concisesoftware.lister.MainActivityFragment"
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:app="http://schemas.android.com/apk/res-auto"
-          xmlns:tools="http://schemas.android.com/tools"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          app:layout_behavior="@string/appbar_scrolling_view_behavior"
-          tools:layout="@layout/fragment_main"/>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Space
+        android:id="@+id/center"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_centerInParent="true"/>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.concisesoftware.lister.fragment.ShowcaseFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/center"
+        android:layout_alignParentBottom="true"
+        tools:visibility="visible"
+        tools:layout="@layout/fragment_showcase"/>
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.concisesoftware.lister.fragment.WordsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/fragment2"
+        android:layout_alignWithParentIfMissing="true"
+        tools:layout="@layout/fragment_words"/>
+
+
+</RelativeLayout>
