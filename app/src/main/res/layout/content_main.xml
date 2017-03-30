@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.concisesoftware.lister.fragment.ShowcaseFragment"
+        android:name="com.concisesoftware.lister.main.fragment.ShowcaseFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/fragment1"
-        android:name="com.concisesoftware.lister.fragment.WordsFragment"
+        android:name="com.concisesoftware.lister.main.fragment.WordsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"

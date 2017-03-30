@@ -1,4 +1,4 @@
-package com.concisesoftware.lister.fragment;
+package com.concisesoftware.lister.main.fragment;
 
 
 import android.os.Bundle;
